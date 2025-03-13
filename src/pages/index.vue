@@ -15,6 +15,9 @@
 
 <script lang="ts" setup>
 const items = [
+  { title: '공통', children: [
+      { title: '레이아웃 ', link: '/baselayout' },
+    ]},
   {
     title: '게시판', children: [
       { title: '목록', link: '/boardList' },
@@ -22,6 +25,9 @@ const items = [
       { title: '댓글 컴포넌트', link: '/commentComp' },
     ]
   },
-  { title: '로그인', children: [{ title: '목록', link: '/login' }] },
+  { title: '회원', children: [
+    { title: '회원가입', link: '/registration' },
+    { title: '로그인', link: '/login' },
+  ] },
 ]
 </script>

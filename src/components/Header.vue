@@ -1,7 +1,7 @@
 <template>
     <v-app-bar :elevation="2">
         <template v-slot:prepend>
-            <v-btn icon>
+            <v-btn icon to="/">
                 <v-icon>mdi-arrow-left</v-icon>
             </v-btn>
         </template>
