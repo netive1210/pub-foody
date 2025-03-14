@@ -10,16 +10,24 @@
             <v-btn icon>
                 <v-icon>mdi-magnify</v-icon>
             </v-btn>
-            <v-btn icon>
+            <v-btn @click.stop="drawer = !drawer">
                 <v-icon>mdi-menu</v-icon>
             </v-btn>
         </template>
     </v-app-bar>
-</template>
-<script lang="ts">
-export default {
 
-}
+    <v-navigation-drawer v-model="drawer" location="right" temporary>
+        <UserInfoComp />
+        <v-list-item link title="음식"></v-list-item>
+        <v-list-item link title="영상"></v-list-item>
+        <v-list-item link title="여행"></v-list-item>
+        <v-list-item link title="반려동물"></v-list-item>
+    </v-navigation-drawer>
+
+</template>
+<script setup lang="ts">
+import { ref } from 'vue';
+const drawer = ref<boolean>(false);
 </script>
 <style lang="">
 

@@ -17,6 +17,7 @@
 const items = [
   { title: '공통', children: [
       { title: '레이아웃 ', link: '/baselayout' },
+      { title: '메뉴 ', link: '/menu' },
     ]},
   {
     title: '게시판', children: [

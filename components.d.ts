@@ -12,9 +12,11 @@ declare module 'vue' {
     Header: typeof import('./src/components/Header.vue')['default']
     HeaderTitle: typeof import('./src/components/HeaderTitle.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    MenuComp: typeof import('./src/components/MenuComp.vue')['default']
     NoticeTop: typeof import('./src/components/NoticeTop.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TopNotice: typeof import('./src/components/TopNotice.vue')['default']
+    UserInfoComp: typeof import('./src/components/UserInfoComp.vue')['default']
   }
 }
